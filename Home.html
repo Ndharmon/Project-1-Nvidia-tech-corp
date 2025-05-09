@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.T.C.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Jumbotron Styling */
+        .jumbotron {
+        position: relative;
+        background-image: url('Homejmbo.jpeg'); /* Updated to use Homejmbo.jpeg */
+        background-size: cover;
+        background-position: center;
+        color: #ffffff;
+        padding: 5rem 2rem;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+        overflow: hidden;
+        }
+
+        /* Overlay for better text readability */
+        .jumbotron::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            z-index: 1;
+        }
+
+        /* Ensure content is above overlay */
+        .jumbotron-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Typography for professionalism */
+        .jumbotron h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+        }
+
+        .jumbotron p {
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Button for call-to-action */
+        .jumbotron .btn {
+            font-size: 1.1rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.3rem;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Container padding adjustment */
+        .container.main-content {
+            padding: 2rem 0;
+        }
+
+        /* Footer styling for consistency */
+        footer {
+            background-color: #212529;
+            padding: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">M.T.C.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Info.html">More Information</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div class="container main-content" style="flex: 1;">
+        <div class="jumbotron text-center">
+            <div class="jumbotron-content">
+                <h1>Master Tech Corp.</h1>
+                <p>Empowering Innovation with Cutting-Edge Technology</p>
+                <a href="Services.html" class="btn btn-primary btn-lg">Explore Our Services</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center">
+        © 2025 Nickolas Harmon. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
